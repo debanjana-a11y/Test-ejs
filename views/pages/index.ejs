@@ -1,0 +1,13 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+
+<h1>Hi, there! I am <%= user.firstname %> <%= user.lastname %></h1>
+<% if (user.admin == true) { %>
+    <p>
+        This is admin's note
+    </p>
+<% } %>
+
+<%- include('../partials/footer') %>
+
+
